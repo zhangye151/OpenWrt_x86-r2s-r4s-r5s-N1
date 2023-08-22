@@ -14,13 +14,13 @@ rm -rf package/feeds
 ./scripts/feeds install -a -p kiddin9 -f
 ./scripts/feeds install -a
 
-sed -i "/CONFIG_KERNEL_/d" devices/common/.config
+sed -i "/CONFIG_KERNEL_/d" .config
 
 echo "
 CONFIG_FEED_gl_feeds_common=n
 CONFIG_FEED_ipq807x=n
 CONFIG_FEED_wifi_ax=n
-" >> devices/common/.config
+" >> .config
 
 sed -i "s/PKG_SOURCE_DATE:=.*/PKG_SOURCE_DATE:=2099-12-06/" package/feeds/wifi_ax/hostapd/Makefile
 

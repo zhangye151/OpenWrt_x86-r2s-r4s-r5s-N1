@@ -134,7 +134,7 @@
  include $(SUBTARGET).mk
  
 +define Image/Build
-+	if [[ "$(PROFILE_SANITIZED)" == "$(PROFILE_SANITIZED)" == "friendlyarm_nanopc-t6" ]]; then \
++	if [[ "$(PROFILE_SANITIZED)" == "friendlyarm_nanopc-t6" ]]; then \
 +		export IMG_PREFIX="$(IMG_PREFIX)$(if $(PROFILE_SANITIZED),-$(PROFILE_SANITIZED))"; \
 +		export BIN_DIR=$(BIN_DIR); \
 +		export TOPDIR=$(TOPDIR); \

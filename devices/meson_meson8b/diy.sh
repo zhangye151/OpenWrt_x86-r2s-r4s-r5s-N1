@@ -13,5 +13,7 @@ curl -sfL https://raw.githubusercontent.com/coolsnowwolf/lede/master/include/ker
 
 svn co https://github.com/openwrt/routing/branches/openwrt-22.03/batman-adv feeds/routing/batman-adv
 
-sed -i 's/DEFAULT_PACKAGES +=/DEFAULT_PACKAGES += automount/' target/linux/meson/Makefile
+sed -i "s/ath9k ath9k-common ath9k-htc //" package/kernel/mac80211/ath.mk
+
+sed -i "s/carl9170 //" package/kernel/mac80211/ath.mk
 

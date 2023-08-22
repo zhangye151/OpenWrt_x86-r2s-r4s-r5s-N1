@@ -22,5 +22,7 @@ sed -i "/KernelPackage,dma-buf/d" package/kernel/linux/modules/other.mk
 
 sed -i "/friendlyelec/d" package/feeds/kiddin9/base-files/files/lib/preinit/02_sysinfo
 
+rm -rf devices/common/patches/enable_wifi.patch
+
 #curl -sfL https://raw.githubusercontent.com/coolsnowwolf/lede/master/package/kernel/linux/modules/video.mk -o package/kernel/linux/modules/video.mk
 
