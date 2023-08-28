@@ -24,5 +24,7 @@ sed -i "/friendlyelec/d" package/feeds/kiddin9/base-files/files/lib/preinit/02_s
 
 rm -rf devices/common/patches/enable_wifi.patch
 
+sed -i "s/ath11k ath11k-ahb ath11k-pci //" package/kernel/mac80211/ath.mk
+
 #curl -sfL https://raw.githubusercontent.com/coolsnowwolf/lede/master/package/kernel/linux/modules/video.mk -o package/kernel/linux/modules/video.mk
 

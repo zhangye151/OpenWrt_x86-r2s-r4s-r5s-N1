@@ -17,7 +17,7 @@ git clone https://github.com/ACwifidude/nss-packages package/nss-packages
 
 sed -i "s/vxlan\/vxlan.ko/vxlan.ko/" package/kernel/linux/modules/netsupport.mk
 
-rm -rf package/feeds/kiddin9/{shortcut-fe,fullconenat,fibocom_QMI_WWAN,fullconenat-nft,fast-classifier,simulated-driver}
+rm -rf package/feeds/kiddin9/{shortcut-fe,fullconenat,fibocom_QMI_WWAN,fullconenat-nft,fast-classifier,simulated-driver} package/nss-packages/qca-nss-crypto package/nss-packages/qca-nss-cfi
 
 curl -sfL https://raw.githubusercontent.com/APCCV/OpenWRT-23.05.0-rc2-NSS/v23.05.0-rc2/nss-makefile-changes/qca-nss-clients-Makefile -o package/nss-packages/qca-nss-clients/Makefile
 curl -sfL https://raw.githubusercontent.com/APCCV/OpenWRT-23.05.0-rc2-NSS/v23.05.0-rc2/nss-makefile-changes/qca-nss-ecm-Makefile -o package/nss-packages/qca-nss-ecm/Makefile
